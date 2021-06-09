@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-09T11:48:39 IST" name="Default suite" finished-at="2021-06-09T11:48:39 IST" duration-ms="36">
+  <suite started-at="2021-06-09T12:35:51 IST" name="Default suite" finished-at="2021-06-09T12:35:51 IST" duration-ms="40">
     <groups>
     </groups>
-    <test started-at="2021-06-09T11:48:39 IST" name="Default test" finished-at="2021-06-09T11:48:39 IST" duration-ms="36">
+    <test started-at="2021-06-09T12:35:51 IST" name="Default test" finished-at="2021-06-09T12:35:51 IST" duration-ms="40">
       <class name="Calculate">
-        <test-method is-config="true" signature="init()[pri:0, instance:Calculate@2ea227af]" started-at="2021-06-09T11:48:39 IST" name="init" finished-at="2021-06-09T11:48:39 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:Calculate@2ea227af]" started-at="2021-06-09T12:35:51 IST" name="init" finished-at="2021-06-09T12:35:51 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="emptyString()[pri:0, instance:Calculate@2ea227af]" started-at="2021-06-09T11:48:39 IST" name="emptyString" finished-at="2021-06-09T11:48:39 IST" duration-ms="5" status="PASS">
+        <test-method signature="emptyString()[pri:0, instance:Calculate@2ea227af]" started-at="2021-06-09T12:35:51 IST" name="emptyString" finished-at="2021-06-09T12:35:51 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyString -->
-        <test-method signature="singleNumber()[pri:0, instance:Calculate@2ea227af]" started-at="2021-06-09T11:48:39 IST" name="singleNumber" finished-at="2021-06-09T11:48:39 IST" duration-ms="0" status="PASS">
+        <test-method signature="singleNumber()[pri:0, instance:Calculate@2ea227af]" started-at="2021-06-09T12:35:51 IST" name="singleNumber" finished-at="2021-06-09T12:35:51 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- singleNumber -->
