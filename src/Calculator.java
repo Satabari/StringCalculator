@@ -7,24 +7,27 @@ public class Calculator {
 		
 		String[] numbers = inputString.split(regEx);
 		
-		
 		if(isEmpty(inputString))
 		{
 			return 0;
 		}
+		
 		else if(inputString.length() == 1){
 			return stringToInteger(inputString);
 		}
+		
 		else {
 			return sumInt(numbers);
 		}
 		
 	}
 	
-	private int sumInt(String[] numbers) throws Exception{
-		
-		negNumInput(numbers);
-		
+	private int sumInt(String[] numbers) throws Exception{		
+		negNumInput(numbers);		
+		return sumIntLessThan1000(numbers);
+	}
+	
+	private int sumIntLessThan1000(String[] numbers) {
 		int sum = 0;
 		for(String loop:numbers){
 			if(stringToInteger(loop) > 1000) {
