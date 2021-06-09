@@ -2,7 +2,7 @@
 public class Calculator {
 
 	public int calString(String inputString) {
-		String[] numbers = inputString.split(",");
+		String[] numbers = inputString.split(",|\n");
 		
 		
 		if(isEmpty(inputString))
