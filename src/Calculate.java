@@ -26,4 +26,7 @@ public class Calculate {
 		assertEquals(cal.calString("1,2"),3);
 	}
 	
+	public void twoNumbersDelimitedByNewLine() {
+		assertEquals(cal.calString("1\n2"),3);
+	}
 }
