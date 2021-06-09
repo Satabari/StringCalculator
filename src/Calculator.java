@@ -23,17 +23,21 @@ public class Calculator {
 	
 	private int sumInt(String[] numbers) throws Exception{
 		
-		for(String loop:numbers){
-			if(stringToInteger(loop) < 0) {
-				throw new Exception("Negative number input!");
-			}
-		}
+		negNumInput(numbers);
 		
 		int sum = 0;
 		for(String loop:numbers){
 			sum += stringToInteger(loop);
 		}
 		return sum;
+	}
+	
+	private void negNumInput(String[] numbers) throws Exception{
+		for(String loop:numbers){
+			if(stringToInteger(loop) < 0) {
+				throw new Exception("Negative number input!");
+			}
+		}
 	}
 	
 	private boolean isEmpty(String inputString) {
