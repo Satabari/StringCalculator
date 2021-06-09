@@ -16,13 +16,17 @@ public class Calculator {
 			return stringToInteger(inputString);
 		}
 		else {
-			return sumInt(numbers[0],numbers[1]);
+			return sumInt(numbers);
 		}
 		
 	}
 	
-	private int sumInt(String num1, String num2) {
-		return Integer.parseInt(num1) + Integer.parseInt(num2);
+	private int sumInt(String[] numbers) {
+		int sum = 0;
+		for(int loop = 0; loop < numbers.length; loop++){
+			sum += Integer.parseInt(numbers[loop]);
+		}
+		return sum;
 	}
 	
 	private boolean isEmpty(String inputString) {
