@@ -33,4 +33,9 @@ public class Calculate {
 	public void threeNumbers() {
 		assertEquals(cal.calString("1\n2,3"),6);
 	}
+	
+	@Test(expectedExceptions = Exception.class)
+	public void negativeInput() {
+		cal.calString("-1");
+	}
 }

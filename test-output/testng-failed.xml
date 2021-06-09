@@ -5,7 +5,7 @@
     <classes>
       <class name="Calculate">
         <methods>
-          <include name="threeNumbers"/>
+          <include name="negativeInput"/>
           <include name="init"/>
         </methods>
       </class> <!-- Calculate -->
