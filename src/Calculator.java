@@ -3,7 +3,7 @@ public class Calculator {
 
 	private final String regEx = ",|\n";
 	
-	public int calString(String inputString) {
+	public int calString(String inputString) throws Exception{
 		
 		String[] numbers = inputString.split(regEx);
 		
@@ -21,7 +21,14 @@ public class Calculator {
 		
 	}
 	
-	private int sumInt(String[] numbers) {
+	private int sumInt(String[] numbers) throws Exception{
+		
+		for(String loop:numbers){
+			if(stringToInteger(loop) < 0) {
+				throw new Exception("Negative number input!");
+			}
+		}
+		
 		int sum = 0;
 		for(String loop:numbers){
 			sum += stringToInteger(loop);
