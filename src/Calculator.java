@@ -27,6 +27,9 @@ public class Calculator {
 		
 		int sum = 0;
 		for(String loop:numbers){
+			if(stringToInteger(loop) > 1000) {
+				continue;
+			}				
 			sum += stringToInteger(loop);
 		}
 		return sum;

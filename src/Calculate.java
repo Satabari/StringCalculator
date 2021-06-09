@@ -40,6 +40,6 @@ public class Calculate {
 	}
 	
 	public void ignoreBiggerNumbers() throws Exception{
-		assertEquals(cal.calString("20,950,1000"),970);
+		assertEquals(cal.calString("20,950,1010"),970);
 	}
 }
