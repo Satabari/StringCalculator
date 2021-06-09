@@ -13,15 +13,18 @@ public class Calculator {
 			return stringToInteger(inputString);
 		}
 		else {
-			return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
+			return sumInt(numbers[0],numbers[1]);
 		}
 		
 	}
 	
-	private boolean isEmpty(String inputString) {
-		return inputString.isEmpty();
+	private int sumInt(String num1, String num2) {
+		return Integer.parseInt(num1) + Integer.parseInt(num2);
 	}
 	
+	private boolean isEmpty(String inputString) {
+		return inputString.isEmpty();
+	}	
 	
 	private int stringToInteger(String inputString) {
 		return Integer.parseInt(inputString);
