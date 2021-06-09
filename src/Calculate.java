@@ -42,4 +42,8 @@ public class Calculate {
 	public void ignoreBiggerNumbers() throws Exception{
 		assertEquals(cal.calString("20,950,1010"),970);
 	}
+	
+	public void multipleDelimiter() throws Exception{
+		assertEquals(cal.calString("//[*][%]\\n1*2%3"),6);
+	}
 }
