@@ -4,6 +4,7 @@ public class Calculator {
 	private final String regEx = ",|\n";
 	
 	public int calString(String inputString) {
+		
 		String[] numbers = inputString.split(regEx);
 		
 		

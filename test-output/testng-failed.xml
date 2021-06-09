@@ -5,7 +5,7 @@
     <classes>
       <class name="Calculate">
         <methods>
-          <include name="twoNumbersDelimitedByNewLine"/>
+          <include name="threeNumbers"/>
           <include name="init"/>
         </methods>
       </class> <!-- Calculate -->

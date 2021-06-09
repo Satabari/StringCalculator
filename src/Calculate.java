@@ -29,4 +29,8 @@ public class Calculate {
 	public void twoNumbersDelimitedByNewLine() {
 		assertEquals(cal.calString("1\n2"),3);
 	}
+	
+	public void threeNumbers() {
+		assertEquals(cal.calString("1\n2,3"),6);
+	}
 }
