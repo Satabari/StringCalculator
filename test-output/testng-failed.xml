@@ -5,8 +5,8 @@
     <classes>
       <class name="Calculate">
         <methods>
-          <include name="singleNumber"/>
           <include name="init"/>
+          <include name="twoNumbers"/>
         </methods>
       </class> <!-- Calculate -->
     </classes>

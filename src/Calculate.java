@@ -22,4 +22,8 @@ public class Calculate {
 		assertEquals(cal.calString("1"),1);
 	}
 	
+	public void twoNumbers() {
+		assertEquals(cal.calString("1,2"),3);
+	}
+	
 }
