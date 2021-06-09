@@ -19,7 +19,7 @@ public class Calculate {
 	}
 	public void singleNumber()
 	{
-		assertEquals("1",1);
+		assertEquals(cal.calString("1"),1);
 	}
 	
 }
