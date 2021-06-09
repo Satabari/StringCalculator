@@ -23,8 +23,8 @@ public class Calculator {
 	
 	private int sumInt(String[] numbers) {
 		int sum = 0;
-		for(int loop = 0; loop < numbers.length; loop++){
-			sum += Integer.parseInt(numbers[loop]);
+		for(String loop:numbers){
+			sum += stringToInteger(loop);
 		}
 		return sum;
 	}
