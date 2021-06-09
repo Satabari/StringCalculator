@@ -38,4 +38,8 @@ public class Calculate {
 	public void negativeInput() throws Exception{
 		cal.calString("-1");
 	}
+	
+	public void ignoreBiggerNumbers() throws Exception{
+		assertEquals(cal.calString("20,950,1000"),970);
+	}
 }
