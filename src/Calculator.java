@@ -2,12 +2,20 @@
 public class Calculator {
 
 	public int calString(String inputString) {
-		// TODO Auto-generated method stub
+		String[] numbers = inputString.split(",");
+		
+		
 		if(isEmpty(inputString))
 		{
 			return 0;
 		}
-		return stringToInteger(inputString);
+		else if(inputString.length() == 1){
+			return stringToInteger(inputString);
+		}
+		else {
+			return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
+		}
+		
 	}
 	
 	private boolean isEmpty(String inputString) {
