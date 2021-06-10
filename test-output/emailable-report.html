@@ -9,13 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">66</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">63</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Calculate</td><td><a href="#m0">multipleDelimiter</a></td><td rowspan="1">1623233403415</td><td rowspan="1">2</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">Calculate</td><td><a href="#m1">emptyString</a></td><td rowspan="1">1623233403403</td><td rowspan="1">7</td></tr><tr class="passedeven"><td><a href="#m2">ignoreBiggerNumbers</a></td><td rowspan="1">1623233403412</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m3">negativeInput</a></td><td rowspan="1">1623233403421</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m4">singleNumber</a></td><td rowspan="1">1623233403423</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m5">threeNumbers</a></td><td rowspan="1">1623233403426</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m6">twoNumbers</a></td><td rowspan="1">1623233403429</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m7">twoNumbersDelimitedByNewLine</a></td><td rowspan="1">1623233403431</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Calculate</td><td><a href="#m0">multipleDelimiter</a></td><td rowspan="1">1623234677456</td><td rowspan="1">1</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">Calculate</td><td><a href="#m1">emptyString</a></td><td rowspan="1">1623234677441</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m2">ignoreBiggerNumbers</a></td><td rowspan="1">1623234677452</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m3">negativeInput</a></td><td rowspan="1">1623234677459</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m4">singleNumber</a></td><td rowspan="1">1623234677462</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m5">threeNumbers</a></td><td rowspan="1">1623234677464</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m6">twoNumbers</a></td><td rowspan="1">1623234677467</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m7">twoNumbersDelimitedByNewLine</a></td><td rowspan="1">1623234677470</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Calculate#multipleDelimiter</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;//[*][%]\n1*2%3&quot;
+<h2>Default test</h2><h3 id="m0">Calculate#multipleDelimiter</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;&quot;
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:646)
+	at java.base/java.lang.Integer.parseInt(Integer.java:670)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
 	at Calculator.stringToInteger(Calculator.java:54)
 	at Calculator.negNumInput(Calculator.java:43)
@@ -53,8 +53,12 @@
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">Calculate#emptyString</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">Calculate#ignoreBiggerNumbers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Calculate#negativeInput</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: Negative number input!
-	at Calculator.negNumInput(Calculator.java:44)
+<h3 id="m3">Calculate#negativeInput</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:670)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at Calculator.stringToInteger(Calculator.java:54)
+	at Calculator.negNumInput(Calculator.java:43)
 	at Calculator.sumInt(Calculator.java:26)
 	at Calculator.calString(Calculator.java:20)
 	at Calculate.negativeInput(Calculate.java:39)

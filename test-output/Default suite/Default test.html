@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 09 15:40:03 IST 2021</td>
+<td>Started on:</td><td>Wed Jun 09 16:01:17 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (66 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (63 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,9 +76,9 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Calculate.multipleDelimiter()'><b>multipleDelimiter</b><br>Test class: Calculate</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;//[*][%]\n1*2%3&quot;
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;&quot;
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:646)
+	at java.base/java.lang.Integer.parseInt(Integer.java:670)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
 	at Calculator.stringToInteger(Calculator.java:54)
 	at Calculator.negNumInput(Calculator.java:43)
@@ -113,10 +113,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1948471365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1948471365'><pre>java.lang.NumberFormatException: For input string: &quot;//[*][%]\n1*2%3&quot;
+</pre></div><a href='#' onClick='toggleBox("stack-trace758348212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace758348212'><pre>java.lang.NumberFormatException: For input string: &quot;&quot;
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:646)
+	at java.base/java.lang.Integer.parseInt(Integer.java:670)
 	at java.base/java.lang.Integer.parseInt(Integer.java:778)
 	at Calculator.stringToInteger(Calculator.java:54)
 	at Calculator.negNumInput(Calculator.java:43)
@@ -163,19 +163,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Calculate.threeNumbers()'><b>threeNumbers</b><br>Test class: Calculate</td>
-<td></td>
-<td>0</td>
-<td>Calculate@47d90b9e</td></tr>
-<tr>
-<td title='Calculate.twoNumbers()'><b>twoNumbers</b><br>Test class: Calculate</td>
-<td></td>
-<td>0</td>
-<td>Calculate@47d90b9e</td></tr>
-<tr>
 <td title='Calculate.negativeInput()'><b>negativeInput</b><br>Test class: Calculate</td>
-<td><div><pre>java.lang.Exception: Negative number input!
-	at Calculator.negNumInput(Calculator.java:44)
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:670)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at Calculator.stringToInteger(Calculator.java:54)
+	at Calculator.negNumInput(Calculator.java:43)
 	at Calculator.sumInt(Calculator.java:26)
 	at Calculator.calString(Calculator.java:20)
 	at Calculate.negativeInput(Calculate.java:39)
@@ -207,9 +201,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace758348212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace758348212'><pre>java.lang.Exception: Negative number input!
-	at Calculator.negNumInput(Calculator.java:44)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1578009262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1578009262'><pre>java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:670)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at Calculator.stringToInteger(Calculator.java:54)
+	at Calculator.negNumInput(Calculator.java:43)
 	at Calculator.sumInt(Calculator.java:26)
 	at Calculator.calString(Calculator.java:20)
 	at Calculate.negativeInput(Calculate.java:39)
@@ -245,7 +243,22 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>Calculate@47d90b9e</td></tr>
 <tr>
-<td title='Calculate.twoNumbersDelimitedByNewLine()'><b>twoNumbersDelimitedByNewLine</b><br>Test class: Calculate</td>
+<td title='Calculate.singleNumber()'><b>singleNumber</b><br>Test class: Calculate</td>
+<td></td>
+<td>0</td>
+<td>Calculate@47d90b9e</td></tr>
+<tr>
+<td title='Calculate.ignoreBiggerNumbers()'><b>ignoreBiggerNumbers</b><br>Test class: Calculate</td>
+<td></td>
+<td>0</td>
+<td>Calculate@47d90b9e</td></tr>
+<tr>
+<td title='Calculate.twoNumbers()'><b>twoNumbers</b><br>Test class: Calculate</td>
+<td></td>
+<td>0</td>
+<td>Calculate@47d90b9e</td></tr>
+<tr>
+<td title='Calculate.threeNumbers()'><b>threeNumbers</b><br>Test class: Calculate</td>
 <td></td>
 <td>0</td>
 <td>Calculate@47d90b9e</td></tr>
@@ -255,12 +268,7 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>Calculate@47d90b9e</td></tr>
 <tr>
-<td title='Calculate.singleNumber()'><b>singleNumber</b><br>Test class: Calculate</td>
-<td></td>
-<td>0</td>
-<td>Calculate@47d90b9e</td></tr>
-<tr>
-<td title='Calculate.ignoreBiggerNumbers()'><b>ignoreBiggerNumbers</b><br>Test class: Calculate</td>
+<td title='Calculate.twoNumbersDelimitedByNewLine()'><b>twoNumbersDelimitedByNewLine</b><br>Test class: Calculate</td>
 <td></td>
 <td>0</td>
 <td>Calculate@47d90b9e</td></tr>

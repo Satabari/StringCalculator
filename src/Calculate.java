@@ -44,6 +44,6 @@ public class Calculate {
 	}
 	
 	public void multipleDelimiter() throws Exception{
-		assertEquals(cal.calString("//[*][%]\\n1*2%3"),6);
+		assertEquals(cal.calString("//;\\n1;2"),3);
 	}
 }

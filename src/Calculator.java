@@ -1,7 +1,7 @@
 
 public class Calculator {
 
-	private final String regEx = ",|\n";
+	private final String regEx = "[^0-9]+";
 	
 	public int calString(String inputString) throws Exception{
 		
