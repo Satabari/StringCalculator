@@ -2,7 +2,7 @@
 public class Calculator {
 
 	//regular expression to check
-	private final String regEx = "[^0-9]+";
+	private final String regEx = ",|\n";
 	
 	//Addition of String method
 	public int calString(String inputString) throws Exception{
